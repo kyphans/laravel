@@ -38,3 +38,9 @@ Route::get('getForm',function (){
     return view('postForm');
 });
 Route::post('postForm',['as'=>'postForm','uses'=>'MyController@postForm']);
+
+//dang nhap
+Route::get('dangnhap',function (){
+    return view('dangnhap');
+});
+Route::post('login','AuthController@login')->name('login');
