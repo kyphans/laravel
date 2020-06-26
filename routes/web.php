@@ -33,3 +33,8 @@ Route::get('database',function (){
 //    echo "Done!";
 });
 
+//Gui nhan request
+Route::get('getForm',function (){
+    return view('postForm');
+});
+Route::post('postForm',['as'=>'postForm','uses'=>'MyController@postForm']);
