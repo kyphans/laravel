@@ -1,4 +1,4 @@
-<form action="{{route('login')}}" method="post">
+<form method="post">
     @csrf
     <input type="text" name="username" placeholder="user name">
     <input type="password" name="password" placeholder="password">

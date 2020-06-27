@@ -40,7 +40,33 @@ Route::get('getForm',function (){
 Route::post('postForm',['as'=>'postForm','uses'=>'MyController@postForm']);
 
 //dang nhap
-Route::get('dangnhap',function (){
-    return view('dangnhap');
+Route::get('login','AuthController@getlogin');
+Route::post('login','AuthController@postlogin');
+
+//model
+Route::get('model/save',function (){
+    $user = new App\User();
+    $user->name = 'Mai';
+    $user->email = 'Mai@gmail.com';
+    $user->password = '123456';
+
+    $user->save();
+
+    echo "Da thuc hien save()";
 });
-Route::post('login','AuthController@login')->name('login');
+Route::get('model/query',function (){
+   $user = App\User::find(3);
+   echo $user->name;
+});
+Route::get('model/taikhoan/save',function (){
+   $user = new App\modle_taikhoan();
+   $user->ten_dang_nhap = 'quocky1';
+   $user->mat_khau = bcrypt('123456');
+
+   $user->save();
+   echo 'Da save db:taikhoan';
+});
+Route::get('model/taikhoan/getall',function (){
+   $user = App\modle_taikhoan::all()->toJson();
+   var_dump($user);
+});

@@ -19,9 +19,9 @@ class userseeder extends Seeder
 {
     public function run()
     {
-        DB::table('taikhoan')->insert([
-           ['ten_dang_nhap'=>'Kyphan','mat_khau'=>bcrypt('461999')],
-            ['ten_dang_nhap'=>'admin','mat_khau'=>bcrypt('123456')]
+        DB::table('users')->insert([
+            ['name' => 'admin', 'email' => 'okee@gmail.com', 'password' => bcrypt('123456')],
+            ['name' => 'laravel', 'email' => 'laravel@gmail.com', 'password' => bcrypt('123456')]
         ]);
     }
 }
