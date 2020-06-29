@@ -11,5 +11,7 @@ class MyController extends Controller
     public function postForm(Request $request)
     {
         echo $request->hoten;
+
     }
 }
+
