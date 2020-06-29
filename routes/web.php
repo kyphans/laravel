@@ -67,3 +67,4 @@ Route::get('model/taikhoan/getall',function (){
 });
 
 //thuc hanh
+
