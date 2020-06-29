@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\modle_taikhoan;
-class AuthController extends Controller
+
+class loginController extends Controller
 {
+    //
     public function getlogin(){
         return view('Login/login');
     }
@@ -16,11 +17,12 @@ class AuthController extends Controller
         $request->validate(
             [
                 'username' => 'required|min:3',
-                'password' => 'min:3'
+                'password' => 'required|min:3'
             ],
             [
                 'username.required' => 'Username không được để trống',
                 'username.min' => 'Username quá ngắn',
+                'password.required' => 'Password không được để trống',
                 'password.min' => 'Password quá ngắn'
             ]
 
@@ -31,12 +33,5 @@ class AuthController extends Controller
         }
         else
             return view('Login/login');
-
-//        $user = modle_taikhoan::find(2);
-//        dd( Auth::login($user));
-//        Auth::login($user);
-//        return view('thanhcong');
-
     }
-
 }

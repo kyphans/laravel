@@ -16,12 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('hello',function (){
-    return 'Xin chao ky phan';
-});
-Route::get('testcode', function (){
-    echo "<h1> Xin chao </h1>";
-});
+
 
 Route::get('database',function (){
 //    Schema::create('users1', function($table)
@@ -40,8 +35,8 @@ Route::get('getForm',function (){
 Route::post('postForm',['as'=>'postForm','uses'=>'MyController@postForm']);
 
 //dang nhap
-Route::get('login','AuthController@getlogin');
-Route::post('login','AuthController@postlogin');
+Route::get('login','loginController@getlogin');
+Route::post('login','loginController@postlogin');
 
 //model
 Route::get('model/save',function (){
@@ -70,3 +65,5 @@ Route::get('model/taikhoan/getall',function (){
    $user = App\modle_taikhoan::all()->toJson();
    var_dump($user);
 });
+
+//thuc hanh
