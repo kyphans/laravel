@@ -1,1 +1,51 @@
-body{padding-top:20px;}
+
+.topnav a {
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+}
+.topnav a:hover {
+    border-bottom: 3px solid #247BFF;
+}
+
+.topnav a.active {
+    border-bottom: 3px solid #247BFF;
+}
+div .container_right{
+   padding-left:0;
+}
+div .customcol {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+div .customrow{
+    margin-right: 0;
+}
+.confirm_btn{
+    margin-top: 10px;
+    margin-bottom: 3px;
+    padding: 5px;
+}
+.confirm{
+    margin: 50px 3px 3px 0px;
+}
+.confirm .text_confirm{
+    text-align: right;
+    font-weight: bold;
+    margin: 5px 3px 5px 0px;
+}
+.table_left{
+    width:auto;
+    height:75vh;
+    overflow:auto;
+}
+.table_right{
+    width:auto;
+    height:50vh;
+    overflow:auto;
+}
+.table_right::-webkit-scrollbar {
+    display: none;
+}
+.table_left::-webkit-scrollbar {
+    display: none;
+}

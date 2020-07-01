@@ -66,5 +66,6 @@ Route::get('model/taikhoan/getall',function (){
    var_dump($user);
 });
 
-//thuc hanh
-
+//home
+Route::get('home','home@getMaster');
+Route::get('home/order','home@getOrder');
