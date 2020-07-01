@@ -102,9 +102,9 @@
                 <div class="bg-light">
                     <div class="md-form m-2">
                         <input style="max-width: 55%;display: inline" class="form-control" type="text" placeholder="Tìm bàn" aria-label="Search">
-                        <button class="btn btn-primary">Tìm</button>
-                        <button class="btn btn-primary">Oke</button>
-                        <button class="btn btn-primary">Test</button>
+                        <button class="btn btn-primary"><i class="fas fa-user-alt"></i></button>
+                        <button class="btn btn-primary"><i class="fas fa-shopping-bag"></i></button>
+{{--                        <button class="btn btn-primary">Test</button>--}}
                     </div>
                     <div class="table_right">
                     <table class="table table-striped table-hover my-2">
@@ -120,38 +120,45 @@
                         <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td></td>
+                            <td>Cá kho</td>
+                            <td>1</td>
+                            <td>50.000</td>
+                            <td>
+                                <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                                <div class="dropdown-menu">
+                                    <button class="dropdown-item" type="button">Option 1</button>
+                                    <button class="dropdown-item" type="button">Option 2</button>
+                                    <button class="dropdown-item" type="button">Option 3</button>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td></td>
+                            <td>Thịt kho</td>
+                            <td>1</td>
+                            <td>70.000</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Canh chua</td>
+                            <td>2</td>
+                            <td>100.000</td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
                             <td>Larry</td>
                             <td>the Bird</td>
                             <td>@twitter</td>
-                            <td></td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
                             <td>Larry</td>
                             <td>the Bird</td>
                             <td>@twitter</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td></td>
+                            <td><i class="fas fa-ellipsis-v"></i></td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
