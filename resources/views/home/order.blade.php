@@ -121,10 +121,10 @@
                         <tr>
                             <th scope="row">1</th>
                             <td>Cá kho</td>
-                            <td>1</td>
+                            <td><input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1"></td>
                             <td>50.000</td>
                             <td>
-                                <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                                <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></span>
                                 <div class="dropdown-menu">
                                     <button class="dropdown-item" type="button">Option 1</button>
                                     <button class="dropdown-item" type="button">Option 2</button>
@@ -199,14 +199,14 @@
                     </table>
                     </div>
                     <div class="confirm_btn">
-                        <button class="btn btn-primary">Thêm món khác</button>
-                        <button class="btn btn-primary"  data-toggle="modal" data-target="#voucherModal">Mã quà tặng</button>
+                        <button class="btn btn-primary"><i class="fas fa-plus"></i> Thêm món khác</button>
+                        <button class="btn btn-primary"  data-toggle="modal" data-target="#voucherModal"><i class="fas fa-gift"></i> Mã quà tặng</button>
                         <!-- Modal -->
                         <div class="modal fade" id="voucherModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Mã quà tặng</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-gift"></i> Mã quà tặng</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>

@@ -68,4 +68,8 @@ Route::get('model/taikhoan/getall',function (){
 
 //home
 Route::get('home','home@getMaster');
-Route::get('home/order','home@getOrder');
+//Route::get('home/order','home@getOrder');
+Route::prefix('home/order')->group(function () {
+    Route::get('/','home@getOrder');
+    Route::get('phucvu','home@getPhucVu');
+});

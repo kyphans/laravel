@@ -13,4 +13,7 @@ class home extends Controller
     public function getOrder (){
         return view('home/order');
     }
+    public function getPhucVu (){
+        return view('home/phucvu');
+    }
 }
