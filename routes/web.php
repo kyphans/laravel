@@ -51,7 +51,7 @@ Route::get('model/save',function (){
 });
 Route::get('model/query',function (){
    $user = App\User::find(3);
-   echo $user->name;
+   dd($user);
 });
 Route::get('model/taikhoan/save',function (){
    $user = new App\modle_taikhoan();
@@ -72,4 +72,6 @@ Route::get('home','home@getMaster');
 Route::prefix('home/order')->group(function () {
     Route::get('/','home@getOrder');
     Route::get('phucvu','home@getPhucVu');
+    Route::get('tramon','home@getTraMon');
+    Route::get('ycthanhtoan','home@getYCThanhToan');
 });

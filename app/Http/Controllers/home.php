@@ -16,4 +16,10 @@ class home extends Controller
     public function getPhucVu (){
         return view('home/phucvu');
     }
+    public function getTraMon (){
+        return view('home/tramon');
+    }
+    public function getYCThanhToan (){
+        return view('home/ycthanhtoan');
+    }
 }

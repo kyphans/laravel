@@ -56,10 +56,12 @@ div .customrow{
     display: inline-table;
     margin: 30px;
 }
-
-table td , th {
-    padding: 10px;
-    margin: 5px;
+.table_custom th,td {
+    width: 200px;
+    height: 50px;
+}
+.table td, .table th{
+    vertical-align:baseline;
 }
 .container_bill{
     padding:2px 5px 0 5px;
@@ -69,3 +71,9 @@ table td , th {
     text-align: center;
 
 }
+.list_btn{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+

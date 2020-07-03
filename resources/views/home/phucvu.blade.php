@@ -1,23 +1,29 @@
 @extends('master.master')
 @section('content')
 <div class="container_bill">
-    <div class="confirm_btna">
-        <button class="btn btn-primary">Đang phục vụ <span class="badge badge-light">4</span></button>
-        <button class="btn btn-primary">YC thanh toán <span class="badge badge-light">1</span></button>
-        <button class="btn btn-primary">Mang về <span class="badge badge-light">2</span></button>
-        <button class="btn btn-primary">Giao hàng <span class="badge badge-light">0</span></button>
-        <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0,5">
-            Tìm bàn
-        </button>
+    <div class="d-flex text-center bd-highlight">
+        <div class="py-1">
+            <button class="btn btn-primary">Đang phục vụ <span class="badge badge-light">4</span></button>
+            <button class="btn btn-primary">YC thanh toán <span class="badge badge-light">1</span></button>
+            <button class="btn btn-primary">Mang về <span class="badge badge-light">2</span></button>
+            <button class="btn btn-primary">Giao hàng <span class="badge badge-light">0</span></button>
+            <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0,5">
+                Tìm bàn
+            </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
                 <a class="dropdown-item" href="#">1</a>
                 <a class="dropdown-item" href="#">2</a>
                 <a class="dropdown-item" href="#">3</a>
             </div>
-        <input style="width:auto;padding-top: 2px;display: inline" class="form-control" type="text" placeholder="Tìm theo số bàn" aria-label="Search">
-        <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0,5">
-            <i class="fas fa-user-alt"></i>
-        </button>
+        </div>
+        <div class="py-1 px-2 flex-grow-1">
+            <input class="form-control" type="text" placeholder="Tìm theo số bàn" aria-label="Search">
+        </div>
+        <div class="py-1">
+            <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0,5">
+                <i class="fas fa-user-alt"></i>
+            </button>
+        </div>
     </div>
 
     <div class="bill_content">
