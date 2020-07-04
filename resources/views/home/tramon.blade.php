@@ -1,93 +1,401 @@
 @extends('master.master')
 @section('content')
 
-    <div class="d-flex text-center">
-        <span class="py-2 px-2 font-weight-bold">Chi tiết order</span>
-        <span class="py-2 px-5"><i class="fas fa-chair"></i> 107</span>
-        <span class="py-2"><i class="fas fa-user-alt"></i> 6</span>
-        <span class="py-2 px-5"><i class="fas fa-money-bill-alt"></i> 2.200.000</span>
-        <span class="py-2 "><i class="fas fa-clock"></i> 30'</span>
+    <div class="d-flex align-middle text-center">
+        <span class="py-2 flex-fill font-weight-bold">Chi tiết order</span>
+        <span class="py-2 flex-fill"><i class="fas fa-chair"></i> 107</span>
+        <span class="py-2 flex-fill"><i class="fas fa-user-alt"></i> 6</span>
+        <span class="py-2 flex-fill"><i class="fas fa-money-bill-alt"></i> 2.200.000</span>
+        <span class="py-2 flex-fill"><i class="fas fa-clock"></i> 30'</span>
     </div>
 
     <div class="table_left">
-    <table class="table_custom table table-striped text-center">
+    <table class="table table-striped align-middle text-center">
         <thead>
-        <tr>
-            <th class="" scope="col">Tên món</th>
-            <th class="" scope="col">SL gọi</th>
-            <th class="" scope="col">Đã trả món</th>
-            <th class="" scope="col">Còn lại</th>
-            <th class="" scope="col">Trả món</th>
-            <th class="" scope="col"></th>
-        </tr>
+            <tr>
+                <th scope="col">Tên món</th>
+                <th scope="col">SL gọi</th>
+                <th scope="col">Đã trả món</th>
+                <th scope="col">Còn lại</th>
+                <th scope="col">Trả món</th>
+                <th scope="col"></th>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Canh chua bông điên điển</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
+                <td class="sl_goi">5</td>
+                <td class="sl_datramon">0</td>
+                <td class="sl_conlai">5</td>
+                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
+                <td class="">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="row"><i class="fas fa-hamburger pr-2"></i>Tôm hấp bia</th>
+                <th scope="row"><i class="fas fa-hamburger pr-2 d-none d-sm-none d-md-inline"></i>Tôm hấp bia</th>
                 <td class="sl_goi">5</td>
                 <td class="sl_datramon">0</td>
                 <td class="sl_conlai">5</td>
                 <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
-                <td>
+                <td class="">
                     <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-success btn-sm"><i class="fas fa-check"></i> Trả món</button>
-                        <button type="button" class="btn btn-danger btn-sm"><i class="fas fa-times-circle"></i> Hủy bỏ</button>
+                        <button type="button" class="btn btn-success btn-sm">
+                            <i class="fas fa-check"></i><span class="d-none d-sm-none d-md-inline"> Trả món</span>
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <i class="fas fa-times-circle"></i><span class="d-none d-sm-none d-md-inline">  Hủy bỏ</span>
+                        </button>
                     </div>
                 </td>
             </tr>
-            <tr>
-                <th scope="row"><i class="fas fa-hamburger pr-2"></i>Tôm hấp bia</th>
-                <td class="sl_goi">5</td>
-                <td class="sl_datramon">0</td>
-                <td class="sl_conlai">5</td>
-                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
-                <td>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button id="confirm" type="button" class="btn btn-success btn-sm"><i class="fas fa-check"></i> Trả món</button>
-                        <button id="cancel" type="button" class="btn btn-danger btn-sm"><i class="fas fa-times-circle"></i> Hủy bỏ</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row"><i class="fas fa-hamburger pr-2"></i>Tôm hấp bia</th>
-                <td class="sl_goi">5</td>
-                <td class="sl_datramon">0</td>
-                <td class="sl_conlai">5</td>
-                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
-                <td>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button id="confirm" type="button" class="btn btn-success btn-sm"><i class="fas fa-check"></i> Trả món</button>
-                        <button id="cancel" type="button" class="btn btn-danger btn-sm"><i class="fas fa-times-circle"></i> Hủy bỏ</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row"><i class="fas fa-hamburger pr-2"></i>Tôm hấp bia</th>
-                <td class="sl_goi">5</td>
-                <td class="sl_datramon">0</td>
-                <td class="sl_conlai">5</td>
-                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
-                <td>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button id="confirm" type="button" class="btn btn-success btn-sm"><i class="fas fa-check"></i> Trả món</button>
-                        <button id="cancel" type="button" class="btn btn-danger btn-sm"><i class="fas fa-times-circle"></i> Hủy bỏ</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row"><i class="fas fa-hamburger pr-2"></i>Tôm hấp bia</th>
-                <td class="sl_goi">5</td>
-                <td class="sl_datramon">0</td>
-                <td class="sl_conlai">5</td>
-                <td class="sl_tramon"><input type="number" value="0" min="0" max="10"/></td>
-                <td>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button id="confirm" type="button" class="btn btn-success btn-sm"><i class="fas fa-check"></i> Trả món</button>
-                        <button id="cancel" type="button" class="btn btn-danger btn-sm"><i class="fas fa-times-circle"></i> Hủy bỏ</button>
-                    </div>
-                </td>
-            </tr>
-
         </tbody>
     </table>
     </div>

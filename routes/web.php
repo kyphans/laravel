@@ -75,3 +75,10 @@ Route::prefix('home/order')->group(function () {
     Route::get('tramon','home@getTraMon');
     Route::get('ycthanhtoan','home@getYCThanhToan');
 });
+
+Route::prefix('home/cashier')->group(function () {
+    Route::get('/','home@getCashierListOrder');
+    Route::get('order','home@getCashierOrder');
+    Route::get('pay','home@getCashierPay');
+    Route::get('ycthanhtoan','home@getYCThanhToan');
+});

@@ -116,7 +116,7 @@
     <script>
         //Yeu cau thanh toan
         $(document).ready(function(){
-            $("td input").click(function(){
+            $("td input").change(function(){
                 var sl_tra = $(this).val();
                 var sl_goi = $(this).closest('tr').find('.sl_t').text();
                 $(this).closest('tr').find('.sl_td').text(sl_goi - sl_tra);
