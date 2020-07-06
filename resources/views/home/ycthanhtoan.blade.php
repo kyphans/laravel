@@ -1,22 +1,22 @@
 @extends('master.master')
 @section('content')
 
-    <div class="d-flex text-center">
-        <span class="py-2 px-2 font-weight-bold">Kiểm đồ</span>
-        <span class="py-2 px-5"><i class="fas fa-chair"></i> 107</span>
-        <span class="py-2"><i class="fas fa-user-alt"></i> 6</span>
-        <span class="py-2 px-5"><i class="fas fa-money-bill-alt"></i> 2.200.000</span>
-        <span class="py-2 "><i class="fas fa-clock"></i> 30'</span>
+    <div class="d-flex align-middle text-center">
+        <span class="py-2 flex-fill font-weight-bold">Kiểm đồ</span>
+        <span class="py-2 flex-fill"><i class="fas fa-chair"></i> 107</span>
+        <span class="py-2 flex-fill"><i class="fas fa-user-alt"></i> 6</span>
+        <span class="py-2 flex-fill"><i class="fas fa-money-bill-alt"></i> 2.200.000</span>
+        <span class="py-2 flex-fill"><i class="fas fa-clock"></i> 30'</span>
     </div>
 
-    <div class="table_left">
-        <table class="table_custom table table-striped text-center">
+    <div class="table_pay_res">
+        <table class="table table-striped align-middle text-center">
             <thead>
             <tr>
-                <th class="" scope="col">Tên món</th>
-                <th class="" scope="col">SL gọi</th>
-                <th class="" scope="col">SL trả lại</th>
-                <th class="" scope="col">SL thực dùng</th>
+                <th cope="col">Tên món</th>
+                <th cope="col">SL gọi</th>
+                <th cope="col">SL trả lại</th>
+                <th cope="col">SL thực dùng</th>
 
             </tr>
             </thead>
@@ -70,7 +70,7 @@
                 <td class="sl_td">3</td>
             </tr>
             <tr>
-                <th  scope="row"><i class="fas fa-hamburger pr-2"></i>Cá kho tộ</th>
+                <th  scope="row"><i class="fas fa-hamburger pr-2"></i>Cá kho tộ cuối</th>
                 <td class="sl_t">3</td>
                 <td><input type="number" value="0" min="0" max="10"/></td>
                 <td class="sl_td">3</td>
@@ -80,11 +80,11 @@
         </table>
     </div>
     <div class="list_btn">
-        <div class="p-2 d-flex text-center">
-            <button class="mr-auto btn btn-primary"><i class="fas fa-times-circle"></i> Hủy bỏ</button>
-            <button class="btn btn-primary"><i class="fas fa-pen"></i> Sửa order</button>
-            <button class="mx-1 btn btn-primary" data-toggle="modal" data-target="#sendnote"><i class="fas fa-sticky-note"></i> Gửi kèm ghi chú</button>
-            <button class="btn btn-primary"><i class="fas fa-calculator"></i> Yêu cầu thanh toán</button>
+        <div class="p-2 d-flex flex-column flex-sm-column flex-md-row text-center">
+            <button class="order-4 order-sm-4 order-md-1 m-1 mr-md-auto btn btn-primary"><i class="fas fa-times-circle"></i> Hủy bỏ</button>
+            <button class="order-1 order-sm-1 order-md-2 m-1 btn btn-primary"><i class="fas fa-pen"></i> Sửa order</button>
+            <button class="order-2 order-sm-2 order-md-3 m-1 btn btn-primary" data-toggle="modal" data-target="#sendnote"><i class="fas fa-sticky-note"></i> Gửi kèm ghi chú</button>
+            <button class="order-3 order-sm-3 order-md-4 m-1 btn btn-primary"><i class="fas fa-calculator"></i> Yêu cầu thanh toán</button>
         </div>
     </div>
 

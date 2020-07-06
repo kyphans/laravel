@@ -2,7 +2,7 @@
 @section('content')
 <div class="container-fluid">
     <div class="row">
-        <div class="col-8">
+        <div class="d-none d-md-block col-8">
             <div class="container bg-light">
                 <div class="topnav nav nav-justified my-2">
                     <a class="nav-item nav-link" href="#">Hay dùng</a>
@@ -97,104 +97,44 @@
         </div>
 
         <!-- Right column -->
-        <div class="bg-light container_right container col-4">
+        <div class="bg-light container col-12 col-md-4">
             <div class="position-fixedd">
                 <div class="bg-light">
-                    <div class="md-form m-2">
-                        <input style="max-width: 55%;display: inline" class="form-control" type="text" placeholder="Tìm bàn" aria-label="Search">
-                        <button class="btn btn-primary"><i class="fas fa-user-alt"></i></button>
-                        <button class="btn btn-primary"><i class="fas fa-shopping-bag"></i></button>
-{{--                        <button class="btn btn-primary">Test</button>--}}
+                    <div class="md-form m-2 d-flex">
+                        <input  class="mr-1 flex-fill form-control" type="text" placeholder="Tìm bàn" aria-label="Search">
+                        <button class="mx-1 btn btn-primary"><i class="fas fa-user-alt"></i></button>
+                        <button class="ml-1 btn btn-primary"><i class="fas fa-shopping-bag"></i></button>
                     </div>
                     <div class="table_right">
                     <table class="table table-striped table-hover my-2">
                         <thead>
                         <tr>
-                            <th scope="col">#</th>
+                            <th  scope="col"></th>
                             <th scope="col">Tên Món</th>
                             <th scope="col">Số lượng</th>
                             <th scope="col">Thành tiền</th>
-                            <th scope="col"></th>
+{{--                            <th class="d-none d-md-block" scope="col"> </th>--}}
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Cá kho</td>
+                            <th class="d-none d-md-block" scope="row">1</th>
+                            <td class="d-block d-md-none">
+                                <img src="https://via.placeholder.com/100" alt="..." class="img-fluid img-thumb">
+                            </td>
+                            <td>Cá kho 1</td>
                             <td><input aria-label="quantity" class="input-qty" max="10" min="1" name="" type="number" value="1"></td>
                             <td>50.000</td>
-                            <td>
-                                <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></span>
-                                <div class="dropdown-menu">
-                                    <button class="dropdown-item" type="button">Option 1</button>
-                                    <button class="dropdown-item" type="button">Option 2</button>
-                                    <button class="dropdown-item" type="button">Option 3</button>
-                                </div>
-                            </td>
+{{--                            <td class="d-none d-md-block">--}}
+{{--                                <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></span>--}}
+{{--                                <div class="dropdown-menu">--}}
+{{--                                    <button class="dropdown-item" type="button">Option 1</button>--}}
+{{--                                    <button class="dropdown-item" type="button">Option 2</button>--}}
+{{--                                    <button class="dropdown-item" type="button">Option 3</button>--}}
+{{--                                </div>--}}
+{{--                            </td>--}}
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Thịt kho</td>
-                            <td>1</td>
-                            <td>70.000</td>
-                            <td><i class="fas fa-ellipsis-v"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Canh chua</td>
-                            <td>2</td>
-                            <td>100.000</td>
-                            <td><i class="fas fa-ellipsis-v"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td><i class="fas fa-ellipsis-v"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td><i class="fas fa-ellipsis-v"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td></td>
-                        </tr>
+
                         </tbody>
                     </table>
                     </div>

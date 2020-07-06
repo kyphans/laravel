@@ -21,7 +21,7 @@
             <a class="flex-fill" href="#">Giao hàng <span class="badge badge-info">0</span></a>
     </div>
     <div class="bill_content row">
-        <div class="col-md-3 mt-3">
+        <div class="col-sm-6 col-md-3 mt-3">
             <table class="text-center table_bill table-bordered">
             <tr>
                 <th class="p-2 bg-primary text-white" colspan="4"><i class="float-left fas fa-tablets"> 1</i><i class="float-right fas fa-user"> 2</i></th>
@@ -48,7 +48,7 @@
             </tr>
         </table>
         </div>
-        <div class="col-md-3 mt-3">
+        <div class="col-sm-6 col-md-3 mt-3">
             <table class="text-center table_bill table-bordered">
                 <tr>
                     <th class="p-2 bg-primary text-white" colspan="4"><i class="float-left fas fa-tablets"> 1</i><i class="float-right fas fa-user"> 2</i></th>
@@ -75,7 +75,7 @@
                 </tr>
             </table>
         </div>
-        <div class="col-md-3 mt-3">
+        <div class="col-sm-6 col-md-3 mt-3">
             <table class="text-center table_bill table-bordered">
                 <tr>
                     <th class="p-2 bg-primary text-white" colspan="4"><i class="float-left fas fa-tablets"> 1</i><i class="float-right fas fa-user"> 2</i></th>
@@ -102,7 +102,7 @@
                 </tr>
             </table>
         </div>
-        <div class="col-md-3 mt-3">
+        <div class="col-sm-6 col-md-3 mt-3">
             <table class="text-center table_bill table-bordered">
                 <tr>
                     <th class="p-2 bg-primary text-white" colspan="4"><i class="float-left fas fa-tablets"> 1</i><i class="float-right fas fa-user"> 2</i></th>
@@ -129,7 +129,7 @@
                 </tr>
             </table>
         </div>
-        <div class="col-md-3 mt-3">
+        <div class="col-sm-6 col-md-3 mt-3">
             <table class="text-center table_bill table-bordered">
                 <tr>
                     <th class="p-2 bg-primary text-white" colspan="4"><i class="float-left fas fa-tablets"> 1</i><i class="float-right fas fa-user"> 2</i></th>
@@ -156,7 +156,7 @@
                 </tr>
             </table>
         </div>
-        <div class="col-md-3 mt-3">
+        <div class="col-sm-6 col-md-3 mt-3">
             <table class="text-center table_bill table-bordered">
                 <tr>
                     <th class="p-2 bg-primary text-white" colspan="4"><i class="float-left fas fa-tablets"> 1</i><i class="float-right fas fa-user"> 2</i></th>

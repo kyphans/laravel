@@ -36,18 +36,20 @@ div .customrow{
     font-weight: bold;
     margin: 5px 3px 5px 0px;
 }
+
 .table_left{
     width:auto;
-    height: calc(100% - 170px);
-    height: -webkit-calc(100% - 170px);
+    height: calc(100vh - 170px);
+    height: -webkit-calc(100vh - 170px);
     overflow:auto;
 }
 .table_right{
     width:auto;
-    height:55vh;
+    height: calc(100vh - 310px);
+    height: -webkit-calc(100vh - 310px);
     overflow:auto;
 }
-.table_right::-webkit-scrollbar {
+.table_right::-webkit-scrollbar, .table_pay_res::-webkit-scrollbar {
     display: none;
 }
 .table_left::-webkit-scrollbar {
@@ -76,7 +78,7 @@ div .customrow{
 .list_btn{
     position: absolute;
     width: 100%;
-    bottom: 10px;
+    bottom: 7px;
 }
 .bg-orange{
     border: orange;
@@ -91,7 +93,13 @@ div .customrow{
 .table thead th, .table td {
     vertical-align: middle;
 }
-
+.img-thumb{
+    width: 60px;
+    height: auto;
+}
+.table td, .table th {
+    border-top: none;
+}
 /*------------------------------------------*/
 
 @media all and (max-device-width: 720px){
@@ -109,5 +117,28 @@ div .customrow{
 @media all and (max-device-width: 320px){
     body {
         font-size: 10px;
+    }
+}
+
+
+/*Scale group button in view order_pay_res*/
+
+@media all and (max-device-width: 1024px){
+    .table_pay_res{
+        width:auto;
+        height: calc(100% - 170px);
+        height: -webkit-calc(100% - 170px);
+        overflow:auto;
+    }
+}
+@media all and (max-device-width: 640px){
+    .table_pay_res{
+        width:auto;
+        height: calc(100% - 270px);
+        height: -webkit-calc(100% - 270px);
+        overflow:auto;
+    }
+    .btn{
+        padding: .175rem .75rem;
     }
 }
