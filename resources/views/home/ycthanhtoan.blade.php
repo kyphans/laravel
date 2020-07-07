@@ -122,7 +122,5 @@
                 $(this).closest('tr').find('.sl_td').text(sl_goi - sl_tra);
             });
         });
-
-
     </script>
 @endsection
